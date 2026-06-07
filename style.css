@@ -1,64 +1,51 @@
+/* تنظیمات کلی صفحه و پس‌زمینه */
 body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: Tahoma, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
 }
 
-.header { 
-    padding: 20px; 
-}
-
-.logo { 
-    width: 120px; 
-    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
-}
-
-.glass-container {
+/* افکت شیشه‌ای برای کادر اصلی */
+.container {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
     padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
+    margin-top: 50px;
     width: 80%;
-    max-width: 400px;
-    margin: 50px auto;
+    max-width: 600px;
 }
 
-.glass-btn {
+/* تنظیمات لوگو */
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* استایل دکمه‌ها و لینک‌ها */
+a {
     display: block;
-    background: rgba(255, 255, 255, 0.3);
-    color: #222;
-    padding: 15px;
-    margin: 15px 0;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
     text-decoration: none;
-    border-radius: 12px;
-    font-weight: bold;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-.glass-btn:hover {
-    background: rgba(255, 255, 255, 0.6);
-}
-
-.glass-footer {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    margin-top: 100px;
-    text-align: center;
-    color: #444;
-}
-
-.footer-text {
-    font-size: 11px;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
+a:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
